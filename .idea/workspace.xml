@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9cb69c55-02de-454f-ad87-09a91fe8cdcc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/COPYING" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/conf/ini.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/conf/ini.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/defs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/io/io.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/io/io.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/io/roll_select_dir.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/io/roll_select_dir.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/io/select_dir.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/lang/bitmap.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/lang/bitmap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/lang/mutex.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/lang/mutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/lang/serializable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/lang/string.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/lang/string.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/log/log.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/log/log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/math/md5.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/math/md5.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/math/random_generator.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/math/random_generator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/math/regex.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/math/regex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/console_reporter.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/console_reporter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/histogram_snapshot.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/histogram_snapshot.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/log_reporter.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/log_reporter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/metric.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/metrics.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/metrics.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/metrics_registry.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/metrics_registry.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/reporter.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/reporter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/reservoir.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/reservoir.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/sampler.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/sampler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/snapshot.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/timer_snapshot.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/timer_snapshot.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/uniform_reservoir.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/metrics/uniform_reservoir.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/mm/debug_new.cpp.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/mm/debug_new.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/mm/mem.cpp.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/mm/mem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/mm/mpool.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/os/os.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/os/os.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/os/path.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/os/path.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/os/pidfile.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/os/pidfile.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/os/process.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/os/process.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/os/process_param.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/os/process_param.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/os/signal.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/os/signal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/callback.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/callback.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/class_factory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/event_dispatcher.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/event_dispatcher.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/example_stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/example_stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/init.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/init.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/kill_thread.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/kill_thread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/metrics_report_event.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/metrics_report_event.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/metrics_stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/metrics_stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/seda_config.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/seda_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/seda_defs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/stage_event.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/stage_event.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/stage_factory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/thread_pool.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/thread_pool.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/timer_stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/seda/timer_stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/time/datetime.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/time/datetime.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/time/timeout_info.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/time/timeout_info.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/common/version.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/how_to_build.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/etc/observer.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/obclient/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/obclient/client.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/event/execution_plan_event.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/event/execution_plan_event.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/event/session_event.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/event/session_event.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/event/sql_event.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/event/sql_event.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/event/storage_event.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/event/storage_event.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/handler/handler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/ini_setting.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/init.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/init.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/net/connection_context.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/net/server.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/net/server.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/net/server_param.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/rc.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/rc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/session/session.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/session/session.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/session/session_stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/session/session_stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/executor/execute_stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/executor/execute_stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/executor/execution_node.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/executor/execution_node.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/executor/tuple.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/executor/tuple.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/executor/value.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/executor/value.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/optimizer/optimize_stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/optimizer/optimize_stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/lex.yy.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/lex.yy.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/lex_sql.l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/parse.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/parse.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/parse_defs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/parse_stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/parse_stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/resolve_stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/resolve_stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/yacc_sql.tab.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/yacc_sql.tab.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/parser/yacc_sql.y" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/plan_cache/plan_cache_stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/plan_cache/plan_cache_stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/query_cache/query_cache_stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/sql/query_cache/query_cache_stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/bplus_tree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/bplus_tree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/bplus_tree_index.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/bplus_tree_index.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/condition_filter.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/condition_filter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/db.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/db.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/field_meta.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/field_meta.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/index.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/index.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/index_manager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/index_manager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/index_meta.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/index_meta.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/meta_util.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/meta_util.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/record_manager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/record_manager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/table.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/table.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/table_meta.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/common/table_meta.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/default/default_handler.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/default/default_handler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/default/default_storage_stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/default/default_storage_stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/default/disk_buffer_pool.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/default/disk_buffer_pool.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/mem/mem_storage_stage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/mem/mem_storage_stage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/trx/trx.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/storage/trx/trx.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/client_performance_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitest/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitest/bitmap_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitest/bp_manager_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitest/log_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitest/log_test.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitest/md5_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitest/md5_test.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitest/path_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitest/pidfile_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitest/rc_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitest/thread_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zXkAmDfCPgaEdRyE3HQRCrmuln" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9cb69c55-02de-454f-ad87-09a91fe8cdcc" name="Changes" comment="" />
+      <created>1634301680192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634301680192</updated>
+      <workItem from="1634301681793" duration="688000" />
+      <workItem from="1634302381951" duration="1000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
