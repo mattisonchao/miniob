@@ -28,7 +28,7 @@ See the Mulan PSL v2 for more details. */
 #include "storage/common/bplus_tree_index.h"
 #include "storage/trx/trx.h"
 
-Table::Table() : 
+Table::Table() :
     data_buffer_pool_(nullptr),
     file_id_(-1),
     record_handler_(nullptr) {
@@ -72,7 +72,7 @@ RC Table::create(const char *path, const char *name, const char *base_dir, int a
                 path, strerror(errno));
       return RC::SCHEMA_TABLE_EXIST;
     }
-    LOG_ERROR("Create table file failed. filename=%s, errmsg=%d:%s", 
+    LOG_ERROR("Create table file failed. filename=%s, errmsg=%d:%s",
        path, errno, strerror(errno));
     return RC::IOERR;
   }
@@ -717,4 +717,33 @@ RC Table::sync() {
   }
   LOG_INFO("Sync table over. table=%s", name());
   return rc;
+}
+
+RC Table::drop(const char *path, const char *name, const char *base_dir) {
+    RC rc = RC::SUCCESS;
+    if (nullptr == name || common::is_blank(name)) {
+        LOG_WARN("Name cannot be empty");
+        return RC::INVALID_ARGUMENT;
+    }
+    LOG_INFO("Begin to drop table %s:%s", base_dir, name);
+
+    // Close file and handler
+    data_buffer_pool_ = theGlobalDiskBufferPool();
+    rc = data_buffer_pool_->close_file(file_id_);
+    if (rc != RC::SUCCESS) {
+        return rc;
+    }
+    // Delete data file
+    std::string data_file = std::string(base_dir) + "/" + name + TABLE_DATA_SUFFIX;
+    if (remove(data_file.c_str()) != 0) {
+        LOG_WARN("Can not remove data file %s. the error is %s", data_file.c_str(), errno);
+        return RC::IOERR;
+    }
+    // Delete table meta data;
+    if (remove(path) != 0) {
+        LOG_WARN("Can not remove meta file %s. the error is %s", path, errno);
+        return RC::IOERR;
+    }
+    LOG_INFO("Successfully create table %s:%s", base_dir, name);
+    return RC::SUCCESS;
 }

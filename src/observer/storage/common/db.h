@@ -40,6 +40,9 @@ public:
   void all_tables(std::vector<std::string> &table_names) const;
 
   RC sync();
+
+  RC drop_table(const char *string);
+
 private:
   RC open_all_tables();
 
