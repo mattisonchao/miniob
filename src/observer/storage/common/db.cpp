@@ -99,7 +99,7 @@ RC Db::open_all_tables() {
 
     if (opened_tables_.count(table->name()) != 0) {
       delete table;
-      LOG_ERROR("Duplicate table with difference file name. table=%s, the other filename=%s", 
+      LOG_ERROR("Duplicate table with difference file name. table=%s, the other filename=%s",
         table->name(), filename.c_str());
       return RC::GENERIC_ERROR;
     }
@@ -134,4 +134,25 @@ RC Db::sync() {
   }
   LOG_INFO("Sync db over. db=%s", name_.c_str());
   return rc;
+}
+
+RC Db::drop_table(const char *table_name) {
+    RC rc = RC::SUCCESS;
+    // check table_name
+    std::string table_file_path = table_meta_file(path_.c_str(), table_name); // 文件路径可以移到Table模块
+    std::unordered_map<std::string, Table *>::const_iterator iter = opened_tables_.find(table_name);
+    Table *table = find_table(table_name);
+    if (nullptr == table) {
+        return RC::SCHEMA_TABLE_NOT_EXIST;
+    }
+    // erase table from map;
+     opened_tables_.erase(table->name());
+    rc = table -> drop(table_file_path.c_str(),table_name, path_.c_str());
+    if (rc != RC::SUCCESS) {
+        return rc;
+    }
+    // delete table
+    delete table;
+    LOG_INFO("Drop table success. table name=%s", table_name);
+    return RC::SUCCESS;
 }
