@@ -15,6 +15,8 @@ See the Mulan PSL v2 for more details. */
 #include "storage/default/disk_buffer_pool.h"
 #include "gtest/gtest.h"
 
+
+//TODO 实现LRU的换页算法
 TEST(test_bp_manager, test_bp_manager_simple_lru) {
   BPManager bp_manager(2);
 

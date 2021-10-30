@@ -3,7 +3,7 @@
 
 
 
-2. build libevent
+2. build cd libevent
 
 ```
 

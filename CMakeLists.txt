@@ -5,6 +5,8 @@ cmake_minimum_required(VERSION 3.10)
 set(CMAKE_CXX_STANDARD 14)
 #SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
+include_directories(./deps)
+
 project(minidb)
 
 MESSAGE(STATUS "This is SOURCE dir " ${test_SOURCE_DIR})

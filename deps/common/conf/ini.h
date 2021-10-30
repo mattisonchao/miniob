@@ -113,7 +113,7 @@ class Ini {
   int insert_entry(std::map<std::string, std::string> *session_map,
                   const std::string &line);
 
-  typedef std::map<std::string, std::map<std::string, std::string>>
+  typedef std::map<std::string, std::map<std::string, std::string> >
     SessionsMap;
 
  private:

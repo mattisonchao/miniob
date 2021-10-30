@@ -33,9 +33,9 @@ Ini::~Ini() {}
 
 void Ini::insert_session(const std::string &session_name) {
   std::map<std::string, std::string> session_map;
-  std::pair < std::string, std::map < std::string, std::string >> entry =
+  std::pair < std::string, std::map < std::string, std::string > > entry =
                                                      std::pair < std::string, std::map < std::string, std::string
-    >> (session_name,
+    > > (session_name,
       session_map);
 
   sections_.insert(entry);

@@ -89,7 +89,7 @@ class LockTrace {
   static std::map<pthread_mutex_t *, LockID> mLocks;
   static std::map<pthread_mutex_t *, int> mWaitTimes;
   static std::map<long long, pthread_mutex_t *> mWaitLocks;
-  static std::map<long long, std::set<pthread_mutex_t *>> mOwnLocks;
+  static std::map<long long, std::set<pthread_mutex_t *> > mOwnLocks;
 
   static pthread_rwlock_t mMapMutex;
   static int mMaxBlockTids;

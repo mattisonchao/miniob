@@ -134,7 +134,7 @@ class EventDispatcher : public Stage {
   // implementation state
 
   typedef std::pair<StageEvent *, DispatchContext *> StoredEvent;
-  typedef std::map<std::string, std::list<StoredEvent>> EventHash;
+  typedef std::map<std::string, std::list<StoredEvent> > EventHash;
 
   EventHash event_store_;      // events stored here while waiting
   pthread_mutex_t event_lock_; // protects access to event_store_

@@ -19,7 +19,7 @@ namespace common {
 std::map<pthread_mutex_t *, LockTrace::LockID> LockTrace::mLocks;
 std::map<pthread_mutex_t *, int> LockTrace::mWaitTimes;
 std::map<long long, pthread_mutex_t *> LockTrace::mWaitLocks;
-std::map<long long, std::set<pthread_mutex_t *>> LockTrace::mOwnLocks;
+std::map<long long, std::set<pthread_mutex_t *> > LockTrace::mOwnLocks;
 std::set<pthread_mutex_t *> LockTrace::mEnableRecurisives;
 
 pthread_rwlock_t LockTrace::mMapMutex = PTHREAD_RWLOCK_INITIALIZER;
@@ -101,7 +101,7 @@ bool LockTrace::deadlockCheck(pthread_mutex_t *mutex, const long long threadId,
     }
   }
 
-  std::map<long long, std::set<pthread_mutex_t *>>::iterator it =
+  std::map<long long, std::set<pthread_mutex_t *> >::iterator it =
       mOwnLocks.find(threadId);
   if (it == mOwnLocks.end()) {
     return false;
